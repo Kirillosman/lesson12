@@ -87,22 +87,22 @@ for (let i = 0; i < arrayStudents.length; i = i + 1) {
     sum = sum + arrayStudents[i].grades[j];
     };
     let avg = sum / arrayStudents[i].grades.length;
-    console.log(avg);
+
     for (let k = 0; k < arrayStudents.length;  k++) {
-        if (avg <= 3 && arrayStudents.gender == "male" && arrayStudents.age >= 18){
+        if (avg <= 3 && arrayStudents[k].gender == "male" && arrayStudents[k].age >= 18){
         arrayStudents[k].isReadyForArmy = true;
         delete arrayStudents[k].grades;
         delete arrayStudents[k].course;
         console.log(arrayStudents[k]);
         };
     };
-    // let Army = [];
-    // for (let x = 0; x < arrayStudents.length; x++) {
-    //     if (arrayStudents[x].isReadyForArmy = true) {
-    //         Army.push(arrayStudents[x])
-    //         console.log(Army);
-    //     }
-    // }
+    let Army = [];
+    for (let x = 0; x < arrayStudents.length; x++) {
+        if (arrayStudents[x].isReadyForArmy = true) {
+            Army.push(arrayStudents[x])
+            console.log(Army);
+        };
+    };
  };
  
 
