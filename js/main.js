@@ -91,14 +91,15 @@ for (let i = 0; i < arrayStudents.length; i = i + 1) {
     for (let k = 0; k < arrayStudents.length;  k++) {
         if (avg <= 3 && arrayStudents[k].gender == "male" && arrayStudents[k].age >= 18){
         arrayStudents[k].isReadyForArmy = true;
-        delete arrayStudents[k].grades;
-        delete arrayStudents[k].course;
         console.log(arrayStudents[k]);
         };
     };
+    
     let Army = [];
     for (let x = 0; x < arrayStudents.length; x++) {
         if (arrayStudents[x].isReadyForArmy = true) {
+            delete arrayStudents.grades;
+            delete arrayStudents.course;
             Army.push(arrayStudents[x])
             console.log(Army);
         };
