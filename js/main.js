@@ -87,10 +87,10 @@ for (let i = 0; i < arrayStudents.length; i = i + 1) {
     sum = sum + arrayStudents[i].grades[j];
     };
     let avg = sum / arrayStudents[i].grades.length;
-    for (let i = 0; i < arrayStudents.length;  i++) {
+
         if (avg <= 3 && arrayStudents[i].gender == "male" && arrayStudents[i].age >= 18){
         arrayStudents[i].isReadyForArmy = true;
-        };
+       
     };
  }; 
 
