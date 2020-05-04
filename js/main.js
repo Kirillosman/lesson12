@@ -97,7 +97,7 @@ for (let i = 0; i < arrayStudents.length; i = i + 1) {
 let Army = [];
 
 for (let x = 0; x < arrayStudents.length; x++) {
-    if (arrayStudents[x].isReadyForArmy = true) {
+    if (arrayStudents[x].isReadyForArmy == true) {
         delete arrayStudents.grades;
         delete arrayStudents.course;
         Army.push(arrayStudents[x]);
